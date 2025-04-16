@@ -35,6 +35,10 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema, "users");
 
+app.get("/", (req, res) => {
+  res.render("index");
+})
+
 const u = new User({
   username: "john",
   notes: [{ title: "foo", description: "bar" }],
