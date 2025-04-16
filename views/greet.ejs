@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Good
+    <% let h = new Date().getHours() %>
+
+    <% if(h < 12){ %>
+        Morning
+    <% }else{ %>
+        Afternoon
+    <% } %>
+
+    , <%= locals.username %> !</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quod reiciendis ab sit corrupti maxime harum
+    inventore quos voluptate dolores.</p>
+<ul>
+
+    <% for (let task of todo){ %>
+        <li>  <%= task %> </li>
+    <% } %>
+
+</ul>
+
+</body>
+</html>
